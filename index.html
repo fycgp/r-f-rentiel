@@ -2,33 +2,104 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Flex Test</title>
+<title>20-35 ans</title>
 
 <style>
+body {
+    margin: 0;
+    background-color: #9C0290;
+    font-family: Arial, sans-serif;
+}
+
+/* TITRE */
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: #6C0277;
+    background-color: #E5D1E0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ----- LAYOUT ----- */
 .container {
     display: flex;
-    border: 3px solid black;
-    height: 300px;
+    min-height: 70vh;
 }
 
+/* MENU NAV */
 nav {
-    background: pink;
-    width: 200px;
+    width: 250px;
+    background-color: #F3C1E8;
+    padding: 20px;
+    font-size: 24px;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+/* SECTION CONTENU */
 section {
-    background: lightblue;
     flex: 1;
+    background: #F7E6F5;
+    padding: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: right;
+    background: #E5D1E0;
+    padding: 10px;
 }
 </style>
 
 </head>
+
 <body>
 
+<header>
+    <h1><u>20-35 ans</u></h1>
+</header>
+
 <div class="container">
-    <nav>MENU</nav>
-    <section>CONTENU</section>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Âge
+                <ul>
+                    <li>20-35 ans</li>
+                    <li>35-50 ans</li>
+                    <li>50 ans et plus</li>
+                </ul>
+            </li>
+            <li>Contact
+                <ul>
+                    <li>Téléphone</li>
+                    <li>Mail</li>
+                    <li>Adresse</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h2>Titre</h2>
+            <p>Article…</p>
+        </article>
+    </section>
 </div>
 
+<footer>
+    <a href="index.html">Accueil</a>
+</footer>
+
 </body>
-</html>
+    </html>
+    
