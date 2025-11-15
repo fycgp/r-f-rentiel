@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
-  <meta charset=UTF-8>
-  <title>Recherche d'appartements</title>
+<meta charset="UTF-8">
+<title>Flex Test</title>
+
+<style>
+.container {
+    display: flex;
+    border: 3px solid black;
+    height: 300px;
+}
+
+nav {
+    background: pink;
+    width: 200px;
+}
+
+section {
+    background: lightblue;
+    flex: 1;
+}
+</style>
+
 </head>
 <body>
-  <header>
-    <h1>Recherche d'appartement</h1>
-   
-  </header>
+
+<div class="container">
+    <nav>MENU</nav>
+    <section>CONTENU</section>
+</div>
+
+</body>
+</html>
